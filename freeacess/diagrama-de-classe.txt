@@ -1,0 +1,435 @@
+
+
+ ---------------------------------------------
+| App.java                                   
+|---------------------------------------------
+|
+|---------------------------------------------
+| + main(String[]): public static void												
+ ---------------------------------------------
+
+
+ ---------------------------------------------
+| Login.java                                   
+|---------------------------------------------
+| + exist_on_db: Boolean  												
+| + cache_id_user: Integer												
+| + hm: HashMap<Boolean, Integer>                
+| + H_FRAME: int                                 
+| + W_FRAME: int                                 
+| - contentPane: JPanel                          
+| - button_login: JButton                       
+| - button_primeiro_acesso: JButton
+| - label_username: JLabel 
+| - label_password: JLabel 
+| - label_icon: JLabel
+| - label_errorText: JLabel
+| - textField_username: JTextField
+| - passwordField_password: JPasswordField
+| - insets: Insets
+| + errorText: String
+|---------------------------------------------
+| + login(): public  												
+| - GUI(): void												
+ ---------------------------------------------
+
+ 
+ ---------------------------------------------
+| RegisterPeople.java                                   
+|---------------------------------------------
+| + H_FRAME: int
+| + W_FRAME: int
+| contentPane: JPanel
+| label_full_name: JLabel 
+| label_date_birth: JLabel 
+| label_cell_phone: JLabel 
+| label_CPF: JLabel
+| label_RG: JLabel
+| label_adress_with_number_and_complement: JLabel 
+| label_email: JLabel 
+| label_username: JLabel 
+| label_password:JLabel
+| label_errorText: JLabel
+| textField_full_name: JTextField 
+| textField_date_birth: JTextField
+| textField_cell_phone:JTextField
+| textField_CPF: JTextField 
+| textField_RG: JTextField
+| textField_adress_with_number_and_complement: JTextField 
+| textField_email: JTextField 
+| textField_username: JTextField 
+| textField_password: JTextField
+| button_save: JButton
+| insets: Insets
+| user: UserBuilder
+| newUserObject: User
+| userdao: UserDAO
+| tablesdao: TablesDbDAO
+| employer: EmployerBuilder
+| newObjectEmployer: Employer
+| employerdao: EmployerDAO
+| createSucessUser: Boolean
+| createSucessEmployer: Boolean
+| + errorText: String
+|---------------------------------------------
+| RegisterPeople(): public						
+| GUI(): private void												
+ ---------------------------------------------
+
+
+ 
+ ---------------------------------------------
+| MainMenu.java                                   
+|---------------------------------------------
+| + H_FRAME:int
+| + W_FRAME:int
+| - contentPane:JPanel
+| - insets:Insets
+| - cache: Integer 
+|---------------------------------------------
+| + MainMenu(): public						
+| + MainMenu(int): public		
+| + GUI(): private void												
+ ---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ---------------------------------------------
+ | AboutPage.java                                   
+ |---------------------------------------------
+ | + H_FRAME: int
+ | + W_FRAME: int
+ | - label_icon: JLabel
+ | + insets: Insets
+ |---------------------------------------------
+ | + AboutPage()						
+ | - GUI(): void												
+  ---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+  ---------------------------------------------
+ | ContactPage.java                                   
+ |---------------------------------------------
+ | H_FRAME:int
+ | W_FRAME:int
+ | insets:Insets
+ |---------------------------------------------
+ | + ContactPage()						
+ | GUI(): private void												
+  ---------------------------------------------
+
+
+
+
+
+
+ ---------------------------------------------
+| ProfilePage.java                                   
+|---------------------------------------------
+| - cache_user: Integer
+| + exist_on_db: Boolean
+| + cache_id_user: Integer
+| + hm HashMap<Boolean, Integer>
+| + H_FRAME: int
+| + W_FRAME: int
+| - contentPane: JPanel
+| - label_name: JLabel
+| - label_email:JLabel
+| - label_phone: JLabel
+| - textField_name: JTextField
+| - textField_email: JTextField
+| - textField_phone: JTextField
+| - insets: Insets
+| + errorText: String
+| - label_icon: JLabel
+|---------------------------------------------
+| + ProfilePage(int): public						
+| - GUI(): private void												
+ ---------------------------------------------
+
+
+
+
+
+ ---------------------------------------------
+| HardwareCourse.java                                   
+|---------------------------------------------
+| + list_path_videos: List<String>
+| + array_path_videos: String[]
+| + H_FRAME: int
+| + W_FRAME: int
+| - label_icon: JLabel
+| - panel: JPanel
+| + insets: Insets
+|---------------------------------------------
+| + HardwareCourse(): public
+| - GUI(): private void																							
+ ---------------------------------------------
+
+
+ ---------------------------------------------
+| NetworkCourse.java                                   
+|---------------------------------------------
+| + list_path_videos: List<String>
+| + array_path_videos: String[]
+| + H_FRAME: int
+| + W_FRAME: int
+| - label_icon: JLabel
+| + insets: Insets
+|---------------------------------------------
+| + NetworkCourse()
+| - GUI(): void																							
+ ---------------------------------------------
+
+
+
+
+
+ ---------------------------------------------
+| ProgrammingLangCouse.java                                   
+|---------------------------------------------
+| + list_path_videos: List<String>
+| + array_path_videos: String[]
+| + H_FRAME: int
+| + W_FRAME: int
+| - label_icon: JLabel
+| + insets: Insets
+|---------------------------------------------
+| + ProgrammingLangCouse(): public
+| - GUI(): void																							
+ ---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+ ---------------------------------------------
+| VideoLessons.java                                   
+|---------------------------------------------
+| + list_path_videos: List<String>
+| + array_path_videos: String[]
+| + H_FRAME: int
+| + W_FRAME: int
+| + label_icon: JLabel
+| + insets: Insets
+|---------------------------------------------
+| + VideoLessons(String[]): public
+| + createComponents(): public static void
+| + removeArrayElements(String[], int): public static String[]
+| + removeComponents(): public static void
+| + getNameFile(String): public static String
+ ---------------------------------------------
+
+
+
+
+
+
+ ---------------------------------------------
+ | VideoPlayer.java                                   
+ |---------------------------------------------
+ | - list_path_videos: List<String>
+ | - array_path_videos: String[]
+ | - H_FRAME: int
+ | - W_FRAME: int
+ | - label_icon: JLabel
+ | - insets: Insets
+ |---------------------------------------------
+ | + VideoPlayer(String[]): public
+ | + initialize(): public void
+ | + loadVideo(String): public void
+ | + executeVideo(String): public void
+  ---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ---------------------------------------------
+ | DB.java                                   
+ |---------------------------------------------
+ | + ERROR_MESSAGE: String
+ | - conn: Connection
+ |---------------------------------------------
+ | - DB()
+ | + getConnection(): Connection
+ | + destroyConnection(): void
+ | - connect(): Connection
+ | - disconnect(): void
+  ---------------------------------------------
+
+ ---------------------------------------------
+ | EmployerDAO.java                                   
+ |---------------------------------------------
+ |
+ |---------------------------------------------
+ | + create(Employer): boolean
+ | + getEmployer(): Employer
+ | - showSQLException(SQLException): void
+  ---------------------------------------------
+
+
+   ---------------------------------------------
+ | LoginDAO.java                                   
+ |---------------------------------------------
+ |
+ |---------------------------------------------
+ | + verifyLogin(String, String): HashMap<Boolean, Integer>
+  ---------------------------------------------
+
+
+
+
+   ---------------------------------------------
+ | TablesDbDAO.java                                   
+ |---------------------------------------------
+ |
+ |---------------------------------------------
+ | + getLastRegister(String): ResultSet
+ | + getLastIdFrom(String): int
+  ---------------------------------------------
+
+
+
+  ---------------------------------------------
+ | VideosPathDAO.java                                   
+ |---------------------------------------------
+ | + array_paths: List<String>
+ |---------------------------------------------
+ | + getPathVideosFromDB(String): List<String>
+  ---------------------------------------------
+
+
+
+  ---------------------------------------------
+ | Employer.java                                   
+ |---------------------------------------------
+ | - id: int
+ | - user_id: int
+ | - full_name: String
+ | - date_birth: String
+ | - cell_phone: Long
+ | - cpf: String
+ | - rg: String
+ | - adress: String
+ | - email: String
+ |---------------------------------------------
+ | + Employer(): 
+ | - Employer(EmployerBuilder): 
+ | + getId(): int
+ | + setId(int): void
+ | + getUserId(): int
+ | + setUserId(int): void
+ | + getFullName(): String
+ | + setFullName(String): void
+ | + getDateBirth(): String
+ | + setDateBirth(String): void
+ | + getCellPhone(): Long
+ | + setCellPhone(Long): void
+ | + getCpf(): String
+ | + setCpf(String): void
+ | + getRg(): String
+ | + setRg(String): void
+ | + getAdress(): String
+ | + setAdress(String): void
+ | + getEmail(): String
+ | + setEmail(String): void
+  ---------------------------------------------
+
+
+
+
+  ---------------------------------------------
+ | User.java                                   
+ |---------------------------------------------
+ | - id: int
+ | - user_name: String
+ | - password: String
+ |---------------------------------------------
+ | - User()
+ | - User(UserBuilder)
+ | + getId(): int
+ | + setId(int): void
+ | + getUserName(): String
+ | + setUserName(String): void
+ | + getPassword(): String
+ | + setPassword(String): void
+  ---------------------------------------------
+
+
+
+
+
+  ---------------------------------------------
+ | EntityException.java                                   
+ |---------------------------------------------
+ |
+ |---------------------------------------------
+ | + EntityException(String): List<String>
+  ---------------------------------------------
+
+
+
+
+  ---------------------------------------------
+ | DBConst.java                                   
+ |---------------------------------------------
+ | + FNAME_LENGTH: int
+ | + LNAME_LENGTH: int
+ |---------------------------------------------
+ | + EntityException(String): List<String>
+  ---------------------------------------------
